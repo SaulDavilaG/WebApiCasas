@@ -1,7 +1,7 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using WebApiCasas.Entidades;
 
-namespace WebApiCasas
+namespace WebApiCasas.Controllers
 {
     public class ApplicationDbContext: DbContext
     {
@@ -11,6 +11,6 @@ namespace WebApiCasas
         }
 
         public DbSet<Casa> Casas { get; set; }
-
+        public DbSet<Habitante> Habitante { get; set;}
     }
 }
